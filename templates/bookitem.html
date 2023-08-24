@@ -1,0 +1,16 @@
+<div class="border-bottom row" style="margin-bottom:16px; padding-bottom:8px;">
+  <div class="col-9">
+    <h4 style="color: rgb(240,128,128); margin-botton:4px;">{{job['title']}}</h4>
+      {% if 'genre' in job %}
+        <div>
+          <b>Genre:</b> {{job['genre']}}
+        </div>
+      {% endif %}
+        <div>
+          <b>Language:</b> {{job['language']}}
+        </div>
+  </div>
+  <div class="col-3">  
+    <button type="button" class="btn btn-danger" style="color:rgb(255,250,240); font-family: Garamond, serif;">Details</button>
+  </div>  
+</div>
