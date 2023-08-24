@@ -24,21 +24,37 @@
         font-weight: normal;
       }
 
-      p {
+      .bodytext {
         font-family: Garamond, serif;
         color: rgb(100, 100, 100);
+      }
+
+      #container {
+        max-width: 720px;
+        margin: 0 auto 0 auto;
+      }
+
+      #copyright {
+        font-family: Garmond,serif;
+        color: rgb(128, 128, 128);
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <h1>Book Shelf</h1>
-    <img id="banner" src="https://book-shelf--lokyen.repl.co/static/banner.jpeg" >
-    <h2>About my book shelf</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <h2>Books</h2>
-    <p>TODO - Show the books here</p>
-    <button>Add Books</button>
+      <div id="container">
+        <h1>Book Shelf</h1>
+        <img id="banner" src="https://book-shelf--lokyen.repl.co/static/banner.jpeg" >
+        <h2>About book shelf</h2>
+        <p class="bodytext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h2>Books</h2>
+        <div style="text-align:center;">
+          <button>Add Books</button>
+        </div>
+        <p class="bodytext">TODO - Show the books here</p>
+        <p id="copyright">Copyright 2023, Destinee</p>
+      </div>  
   </body>
 </html>
