@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
@@ -33,10 +33,15 @@ JOBS = [
   },
   
 ]
+
 @app.route("/")
 def hello_world():
   return render_template('home.html', jobs=JOBS, app_name='Book Shelf')
 
+@app.route("/api/books")
+def list_books():
+  return jsonify(JOBS)
+  
 print(__name__)
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
