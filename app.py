@@ -31,6 +31,13 @@ JOBS = [
     'language': 'Japanese',
     'type': 'Manga',
   },
+  {
+    'id': 5,
+    'title': 'Why Raeliana Ended Up at the Duke\'s Mansion', 
+    'genre': 'Isekai',
+    'language': 'English',
+    'type': 'Manhwa',
+  },
   
 ]
 
